@@ -7,6 +7,7 @@
   * Author: Seale
   * 复用样式请注明原作者,谢谢配合
 */
+/***************************************base******************************************/
 *{
     padding: 0;
     margin: 0;
@@ -18,7 +19,100 @@ html {
     font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #795548;
+}
+::selection{
+    background: #795548;
+    color: #fff;
+}
+/***********************************var set*********************************************/
+:root{
+    --z1: 1;
+    --z2: 2;
+    --z3: 3;
+    --z4: 4;
+    --z5: 5;
+}
+
+
+
+/***********************************core css*******************************************/
 .sp-container{
     width: 1280px;
     margin: 0 auto;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.z5{
+    z-index: var(--z5);
+}
+.z4{
+    z-index: var(--z4);
+}
+.z3{
+    z-index: var(--z3);
+}
+.z2{
+    z-index: var(--z2);
+}
+.z1{
+    z-index: var(--z1);
+}
+.top0{
+    top: 0;
+}
+.left0{
+    left: 0;
+}
+.right0{
+    right: 0;
+}
+.bottom0{
+    bottom: 0;
+}
+.vh100{
+    height: 100vh;
+}
+.vw100{
+    width: 100vw;
+}
+.flex{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.flex.col{
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+.f-jc-c {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.f-jc-sb{
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.f-al-c{
+    align-items: center;
+    -webkit-align-items: center;
+}
+.no-select{
+    user-select: none;
+}
+.cur-p{
+    cursor: pointer;
+}
+.cur-d{
+    cursor: default;
 }
