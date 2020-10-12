@@ -28,3 +28,7 @@ const remoteScript =document.createElement('script')
 remoteScript.type = 'text/JavaScript'
 remoteScript.src =iconFontUrl
 document.body.appendChild(remoteScript)
+
+/*打印版权*/
+// TODO LOG VERSION
+console.log("%c SuperDonation v0.1  %c Seale %c 群星闪耀,终不过一曲清欢！", "color:#444;background:#eee;padding:5px 0;", "color:#eee;background:#444;padding:5px 0;", "color:#444;background:#eee;padding:5px 0;");

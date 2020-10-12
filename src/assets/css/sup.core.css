@@ -103,6 +103,10 @@ a{
     justify-content: space-between;
     -webkit-justify-content: space-between;
 }
+.f-jc-r{
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
 .f-al-c{
     align-items: center;
     -webkit-align-items: center;
@@ -115,4 +119,7 @@ a{
 }
 .cur-d{
     cursor: default;
+}
+.tx-al-c{
+    text-align: center;
 }

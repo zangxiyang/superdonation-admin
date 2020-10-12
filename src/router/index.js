@@ -36,7 +36,10 @@ const routes = [
         /*登录*/
         path: '/login',
         name: 'Login',
-        component: () => import('@/views/Login')
+        component: () => import('@/views/Login'),
+        meta:{
+            title: '登录管理 - Powered by SuperDonation'
+        }
     }
 ]
 
@@ -45,5 +48,11 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes
 })
-
+router.beforeEach((to,from,next) => {
+    //更新router的title到网页的标题
+    if (to.meta.title){
+        document.title = to.meta.title
+    }
+    next()
+})
 export default router

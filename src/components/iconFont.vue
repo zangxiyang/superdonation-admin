@@ -15,7 +15,7 @@ export default {
     }
   },
   mounted() {
-    console.log('当前的size:'+this.size)
+
   }
 }
 </script>
