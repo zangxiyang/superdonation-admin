@@ -74,6 +74,7 @@ export default {
 <style scoped>
 #login {
   background: #363636;
+  overflow: hidden;
 }
 
 .babble-container {
@@ -164,7 +165,9 @@ h3{
 
 <style>
 /* login 页面 覆盖的样式*/
-
+html{
+  overflow-y: hidden;
+}
 /*输入框*/
 .el-input__prefix {
   display: flex;
